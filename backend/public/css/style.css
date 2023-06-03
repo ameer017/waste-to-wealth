@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+html {
+  font-family: "Pacifico", cursive;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: #2c2b2b;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.container {
+  position: absolute;
+  background: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 80vw;
+  max-width: 70.5rem;
+  height: 60vh;
+  box-shadow: 0 1rem 2rem rgb(59, 70, 38);
+  font-size: 25px;
+  font-weight: 700;
+}

@@ -1,0 +1,59 @@
+.front {
+    top: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+
+    .logo-bottle {
+        position: absolute;
+        top: 1.2rem;
+        rotate: -45deg;
+        font-size: 45px;
+        color: #fff;
+    }
+
+    .logo-leaf {
+        position: absolute;
+        top: 15rem;
+        left: 2rem;
+        font-size: 45px;
+        color: #fff;
+    }
+
+    .left {
+        padding: 0 2rem;
+
+        h1{
+            font-weight: 800;
+        }
+
+        p{
+            font-size: 20px;
+            margin-bottom: 5rem;
+        }
+
+        .btn {
+            cursor: pointer;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            border: none;
+            padding-block: 12px;
+            padding-inline: 12px;
+            color: white;
+            background-color: rgb(96, 120, 61);
+            border-radius: 15px;
+            outline: none;
+        }
+    }
+
+    .right {
+        font-size: 300px;
+        color: rgb(96, 120, 61);
+    }
+}
