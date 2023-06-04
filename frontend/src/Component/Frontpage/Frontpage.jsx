@@ -1,16 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Frontpage.scss'
 import {GiWaterBottle, GiEcology} from 'react-icons/gi'
 import {BiLeaf} from 'react-icons/bi'
-import {CiLink} from 'react-icons/ci'
 import { useNavigate } from 'react-router-dom'
 
-const Frontpage = () => {
-    const navigate = useNavigate
 
-    const handleLoad = () => {
-        navigate('/herosection');
+const Frontpage = () => {
+    const [isLoading, setIsLoading] = useState(false)
+    const navigate = useNavigate()
+
+    const loadPage = () => {
+
+        setIsLoading(true);
+
+        setTimeout(() => {
+        setIsLoading(false);
+            navigate('/herosection')
+        }, 2000);
     }
+
 
   return (
     <div className='front'>
@@ -21,7 +29,9 @@ const Frontpage = () => {
             <h1>How can we save the ecology?</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
-            <button className='btn' onClick={handleLoad}>Get Started <CiLink/></button>
+            <button className='btn' onClick={loadPage} disabled={isLoading}>
+                {isLoading ? 'Loading...' : 'Get Started'}
+            </button>
         </div>
         <div className='right'>
             <GiEcology/>

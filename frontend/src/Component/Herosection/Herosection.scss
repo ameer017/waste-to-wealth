@@ -1,0 +1,65 @@
+.hero {
+    color: #fff;
+    height: 60vh;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    box-shadow: 0 1rem 2rem rgba($color:#000000,$alpha: 0.2);
+    border-radius: 15px;
+        
+    h1{
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 15px;
+    }
+    .right {
+        img{
+            width: 200px;
+        }
+    }
+
+    .logo-leaf {
+        position: absolute;
+        top: 10rem;
+        left: 15rem;
+        font-size: 45px;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero {
+
+        h1{
+            font-size: 30px;
+            font-weight: 500;
+        }
+    
+        p {
+            font-size: 13px;
+        }
+        .right{
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .hero {
+
+        flex-direction: column-reverse;
+
+        .logo-leaf {
+            top: 10rem;
+            left: 2rem;
+        }
+    }
+}

@@ -6,21 +6,21 @@
     align-items: center;
     gap: 2rem;
     position: relative;
-
+    
     .logo-bottle {
         position: absolute;
-        top: 1.2rem;
+        top: 5rem;
         rotate: -45deg;
         font-size: 45px;
-        color: #fff;
+        color: #A5DE98;
     }
 
     .logo-leaf {
         position: absolute;
-        top: 15rem;
-        left: 2rem;
+        top: 40rem;
+        left: 15rem;
         font-size: 45px;
-        color: #fff;
+        color: #A5DE98;
     }
 
     .left {
@@ -55,5 +55,48 @@
     .right {
         font-size: 300px;
         color: rgb(96, 120, 61);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .front {
+
+        .left {
+            padding: 0 2rem;
+    
+            h1{
+                font-weight: 600;
+            }
+    
+            p{
+                font-size: 15px;
+                margin-bottom: 5rem;
+            }
+        }
+
+        .right{
+            font-size: 200px;
+            margin-right: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .front {
+        flex-direction: column-reverse;
+        gap: 0;
+        text-align: center;
+
+        .logo-bottle {
+            left: 5rem;
+        }
+
+        .logo-leaf {
+            top: 45rem;
+            left: 15rem;
+        }
+
+        .right{
+            margin-top: 10rem;
+        }
     }
 }
