@@ -1,0 +1,71 @@
+@keyframes audioWave {
+    0% {
+        color: #4c643f;
+        transform: translateY(0px);
+    }
+    25% {
+        color: #fff;
+        transform: translateY(-5px) scaleY(1.7);
+    }
+    50% {
+        color: #4c643f;
+        transform: translateY(0px);
+    }
+    100% {
+        color: #fff;
+        transform: translateY(px);
+    }
+}
+
+.soundWave {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background-image: url(/src//assets/image/avocet-high-resolution-logo-color-on-transparent-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-color: #2b5130;
+    background-blend-mode: multiply;
+
+    span {
+        font-size: 35px;
+        display: block;
+        animation: audioWave 2.2s infinite ease-in-out;
+        -webkit-animation: audioWave 2.2s infinite ease-in-out;
+    }
+
+    span:nth-child(2) {
+        left: 11px;
+        animation-delay: 0.1s;
+    }
+    span:nth-child(3) {
+        left: 22px;
+        animation-delay: 0.2s;
+    }
+    span:nth-child(4) {
+        left: 33px;
+        animation-delay: 0.3s;
+    }
+    span:nth-child(5) {
+        left: 55px;
+        animation-delay: 0.4s;
+    }
+    span:nth-child(6) {
+        left: 66px;
+        animation-delay: 0.5s;
+    }
+    span:nth-child(7) {
+        left: 77px;
+        animation-delay: 0.6s;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .soundWave {
+        background-color: #c9dbe2;
+        background-image: none;
+    }
+}

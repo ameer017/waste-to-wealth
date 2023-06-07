@@ -10,7 +10,7 @@
 }
 
 .navbar {
-  background-color: #839f72;
+  background-color: #2a3e1e;
   color: #fff;
   height: 60px;
   display: flex;
@@ -89,12 +89,19 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #839f72;
+    background-color: #c9dbe2;
     padding: 20px;
     text-align: center;
   }
 
   .active a {
     margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  
+  .navbar {
+    background-color: #c9dbe2;
   }
 }

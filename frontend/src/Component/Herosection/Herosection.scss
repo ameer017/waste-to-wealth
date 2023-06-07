@@ -1,30 +1,44 @@
 .hero {
     color: #fff;
-    height: 60vh;
     margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 7rem 3rem;
     box-shadow: 0 1rem 2rem rgba($color:#000000,$alpha: 0.2);
-    border-radius: 15px;
-        
-    h1{
-        font-size: 50px;
-        font-weight: 800;
-    }
-
-    p {
-        font-size: 15px;
-    }
-    .right {
-        img{
-            width: 200px;
+    border-radius: 10px;
+    
+    .title {
+        h1{
+            font-size: 60px;
+            font-weight: 800;
+        }
+    
+        h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.3rem;
+        }
+    
+        p {
+            font-size: 15px;
+            margin: 2.5rem 0;
         }
     }
+     
+    .right {
+        img{
+            width: 300px;
+        }
 
+        .none{
+            display: none;
+        }
+    }
+    
     .logo-leaf {
         position: absolute;
         top: 10rem;
@@ -34,32 +48,52 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 760px) {
     .hero {
-
-        h1{
-            font-size: 30px;
-            font-weight: 500;
-        }
-    
-        p {
-            font-size: 13px;
-        }
-        .right{
-            img{
-                width: 150px;
-            }
-        }
+        flex-direction: column-reverse;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
     .hero {
+        background-color: #c9dbe2;
+        .title {
+            h1 {
+                font-size: 35px;
+                background-image: linear-gradient(to right, #263b43, rgb(97, 97, 167), #263b43);
+                background-repeat: no-repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p{
+                font-size: 20px;
+                color: #263b43;
+            }
+            h2 {
+                font-size: 25px;
+                color: #263b43;
+                font-weight: 600;
+            }
+        }
 
-        flex-direction: column-reverse;
-
+        .right{
+            #show{
+                display: none;
+            }
+            .none{
+                display: block;
+                background: #263b43;
+                border-radius: 50%;
+                padding: 1em;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+        }
         .logo-leaf {
             top: 10rem;
             left: 2rem;
         }
+
     }
 }

@@ -14,9 +14,8 @@ const Navbar = () => {
         <a href='/'className="navbar-logo">AVOCET</a>
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <a href="#about">About</a>
-          <a href="#about">Orders</a>
-          <a href="#services">Services</a>
-          <a href="#services">Faqs</a>
+          <a href="#service">Services</a>
+          <a href="#faqs">Faqs</a>
           <a href="#contact">Contact</a>
         </div>
         <div className="navbar-toggle" onClick={toggleNavbar}>
