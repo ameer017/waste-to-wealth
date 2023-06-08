@@ -1,23 +1,58 @@
 .about {
     color: #fff;
-    text-align: center;
-    padding: 5rem 3rem;
+    padding: 5rem 6rem;
     margin: 2rem 0;
         
     h1{
         font-size: 50px;
         font-weight: 800;
         margin-bottom: 1.2rem;
+        text-align: center;
     }
 
     p {
         font-size: 18px;
+        margin-bottom: 6rem;
+        line-height: 2;
+        letter-spacing: .1em;
+    }
+
+    .one {
+        text-align: center;
+    }
+
+    ul {
+        h3 {
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        li{
+            font-size: 15px;
+            margin: 1.2rem 0;
+            list-style: none;
+        }
+    }
+
+    .last {
+        margin-top: 1.2rem;
+
+        p{
+            font-size: 15px;
+        }
     }
 }
 
 @media screen and (max-width: 640px) {
     .about {
         color: #263b43;
+        text-align: center;
+
+        h4{
+            text-align: left;
+            margin-top: -5rem;
+            margin-bottom: 2rem;
+        }
 
         h1{
             font-size: 35px;

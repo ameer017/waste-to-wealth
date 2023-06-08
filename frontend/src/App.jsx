@@ -1,6 +1,6 @@
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
-import {DashLayout, Home, Layout, Login, Signup, UsersList, Welcome} from '../index'
+import {DashLayout, Home, Layout, Login,  NewAbout,  NewService,  Signup, UsersList, Welcome} from '../index'
 
 function App() {
 
@@ -9,6 +9,8 @@ function App() {
       <Routes>
           <Route element={<Layout />}>
             <Route path='/' element={< Home/>} />
+            <Route path='/newabout' element={<NewAbout/>}/>
+            <Route path='/newservice' element={<NewService/>}/>
             <Route path='/signup' element={<Signup />} />
             <Route path='/login' element={<Login />} /> 
 

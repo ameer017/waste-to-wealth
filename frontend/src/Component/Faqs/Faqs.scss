@@ -1,46 +1,117 @@
-.faqs {
-    color: #fff;
-    margin-top: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 7rem 3rem;
-    box-shadow: 0 1rem 2rem rgba($color:#000000,$alpha: 0.2);
-    border-radius: 15px;
-    background-image: url('https://media.istockphoto.com/id/1388159455/photo/note-paper-with-question-mark-on-textured-concrete-wall-background.webp?b=1&s=170667a&w=0&k=20&c=kR0R1m-N03-k52EkqOn6ytigZm0YkdnNSzIjLJPFirU=');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    background-color: rgba($color: #839f72, $alpha: 1.0);
-        
-    h1{
-        font-size: 50px;
-        font-weight: 800;
-        margin-bottom: 1.2rem;
+.faq {
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem 3rem;
+    border-radius: 10px;
+  
+    article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+  
+      svg {
+        background-color: #fff;
+        font-size: 22px;
+  
+        @media screen and (min-width: 2000px) {
+          font-size: 48px;
+        }
+      }
+    }
+  
+    .faqText {
+      color: var(--dark-color);
+  
+      @media screen and (min-width: 2000px) {
+        font-size: 38px;
+      }
+    }
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 28px;
+    }
+  
+    @media screen and (max-width: 540px) {
+      margin: 1rem 1rem;
+    }
+  }
+  
+  .faqs {
+    margin: 5rem 3rem;
+    height: auto;
+  
+    h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+  
+      @media screen and (min-width: 2000px) {
+        font-size: 60px;
+      }
+    }
+  
+    @media screen and (max-width: 912px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+  
+    @media screen and (max-width: 640px) {
+      
+        color: #263b43;
     }
 
-    p {
+    @media screen and (max-width: 540px) {
+      margin: 3rem 1rem;
+    }
+  }
+  
+  .faqsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 5rem;
+    align-items: flex-start;
+  
+    :nth-child(1) {
+      order: 1;
+    }
+  
+    :nth-child(3) {
+      order: 5;
+    }
+  
+    :nth-child(2) {
+      order: 3;
+    }
+  
+    :nth-child(4) {
+      order: 2;
+    }
+  
+  
+    @media screen and (max-width: 912px) {
+      grid-template-columns: 1fr;
+      :nth-child(1) {
+        order: 1;
+      }
+  
+      :nth-child(2) {
+        order: 2;
+      }
+  
+      :nth-child(3) {
+        order: 3;
+      }
+  
+      :nth-child(4) {
+        order: 4;
+      }
+  
+    }
+
+    @media screen and (max-width: 640px) {
         font-size: 18px;
-    }
-    
-
-}
-
-@media screen and (max-width: 640px) {
-    .faqs {
-
-        h1{
-            font-size: 30px;
-            font-weight: 500;
-        }
-    
-        p {
-            font-size: 13px;
-        }
-        
-    }
-}
+      }
+  }

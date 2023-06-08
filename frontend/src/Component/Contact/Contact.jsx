@@ -26,7 +26,7 @@ const Contact = (props) => {
 
             <form>
                 <input type='name' placeholder='your name here..'/>
-                <input type='email' placeholder='email@company.com' onChange={handleInputChange}/>
+                <input type='email' placeholder='yourname@email.com' onChange={handleInputChange}/>
 
                 <button type='submit' onClick={validateEmail} className='btn'>Send</button>
             </form>

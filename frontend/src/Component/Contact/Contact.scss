@@ -10,9 +10,7 @@
     background-color: #fff;
     gap: 5em;
 
-    .phone {
-        display: none;
-    }
+    
 
     .text {
         display: flex;
@@ -22,6 +20,7 @@
 
         p {
             margin: 1.2rem 0;
+            letter-spacing: .1em;
         }
 
         form {
@@ -48,7 +47,8 @@
             }
         
             .btn {
-                width: 150px;
+                width: 250px;
+                border-radius: 5px;
             }
 
         }

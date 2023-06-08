@@ -31,7 +31,7 @@ const MainPage = () => {
           <Service/>
           <Faqs/>
           <Contact/>
-          {/* <Footer/> */}
+          <Footer/>
         </>
     }
     </div>
